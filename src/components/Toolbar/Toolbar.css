@@ -16,12 +16,16 @@
 
 .toolbar__logo {
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .toolbar__logo a {
-  color: white;
-  text-decoration: none;
+  color: green;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.8rem;
+  text-decoration: none;
+  padding: 5px;
 }
 
 .spacer {
@@ -40,7 +44,7 @@
 }
 
 .toolbar_navigation-items a {
-  color: white;
+  color: green;
   text-decoration: none;
 }
 
