@@ -2,7 +2,11 @@ import React from "react";
 
 import "./SideDrawer.css";
 
-const sideDrawer = ({ show }) => {
+interface Props {
+  show:  boolean;
+}
+
+const sideDrawer: React.FC<Props> = ({ show }) => {
   let drawerClasses = "side-drawer";
   if (show) {
     drawerClasses = "side-drawer open";

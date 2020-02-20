@@ -3,7 +3,11 @@ import React from "react";
 import DrawerToggle from "../SideDrawer/DrawerToggle";
 import "./Toolbar.css";
 
-const toolbar = ({ handleToggle }) => (
+interface Props {
+  handleToggle():  void;
+}
+
+const toolbar: React.FC<Props> = ({ handleToggle }) => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
       <div>
@@ -11,7 +15,7 @@ const toolbar = ({ handleToggle }) => (
       </div>
       <div className="toolbar__logo">
         <a href="/">
-          <img src="../../public/lemon.png" alt="THE LOGO" />
+          <img src="/public/lemon.png" alt="THE LOGO" />
         </a>
       </div>
       <div className="spacer" />
