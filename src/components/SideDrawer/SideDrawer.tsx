@@ -1,26 +1,30 @@
 import React from "react";
 
+import Backdrop from "../Backdrop/Backdrop";
 import "./SideDrawer.css";
 
 interface Props {
-  show:  boolean;
+  show: boolean;
+  deactiveDrawer(): void;
 }
 
-const sideDrawer: React.FC<Props> = ({ show }) => {
-  let drawerClasses = "side-drawer";
-  if (show) {
-    drawerClasses = "side-drawer open";
-  }
+const sideDrawer: React.FC<Props> = (props) => {
+  let drawerClasses = props.show ? "side-drawer open": "side-drawer";
+  let backdrop = props.show ? <Backdrop click={props.deactiveDrawer} /> : null;
+
   return (
-    <div className={drawerClasses}>
-      <ul>
-        <li>
-          <a href="/">Projects</a>
-        </li>
-        <li>
-          <a href="/">About</a>
-        </li>
-      </ul>
+    <div>
+      {backdrop}
+      <div className={drawerClasses}>
+        <ul>
+          <li>
+            <a href="/">Projects</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
