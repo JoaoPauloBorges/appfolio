@@ -1,14 +1,9 @@
 .toggle-button {
   height: 25px;
-  widows: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  box-sizing: border-box;
+  justify-content: space-evenly;
 }
 
 .toggle-button:focus {
@@ -16,7 +11,13 @@
 }
 
 .toggle-button__line {
-  width: 30px;
-  height: 2px;
+  width: 28px;
+  height: 3px;
   background: white;
+}
+
+@media (max-width: 650px) {
+  .drawerWrapper > .makeStyles-menuButton-2 {
+    margin-right: 0 !important;
+  }
 }

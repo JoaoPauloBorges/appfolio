@@ -9,7 +9,7 @@
   max-width: 300px;
   z-index: 200;
   transform: translateX(-101%);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .side-drawer.open {
