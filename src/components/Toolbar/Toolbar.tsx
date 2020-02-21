@@ -2,10 +2,13 @@ import React from "react";
 
 import DrawerToggle from "../SideDrawer/DrawerToggle";
 import "./Toolbar.css";
-
 import Background from "../../../public/lemon.png";
 
-const toolbar = ({ handleToggle }) => {
+interface Props {
+  handleToggle():  void;
+}
+
+const toolbar: React.FC<Props> = ({ handleToggle }) => {
   const logoStyle = {
     backgroundImage: `url(${Background})`,
     backgroundPosition: "center",
