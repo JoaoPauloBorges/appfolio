@@ -2,10 +2,10 @@ import React from "react";
 
 import DrawerToggle from "../SideDrawer/DrawerToggle";
 import "./Toolbar.css";
-import Background from "../../../public/lemon.png";
+import Background from "../../assets/lemon.png";
 
 interface Props {
-  handleToggle():  void;
+  handleToggle(): void;
 }
 
 const toolbar: React.FC<Props> = ({ handleToggle }) => {
