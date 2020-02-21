@@ -15,10 +15,10 @@ const sideDrawer: React.FC<Props> = ({ show }) => {
     <div className={drawerClasses}>
       <ul>
         <li>
-          <a href="Products">Products</a>
+          <a href="/">Projects</a>
         </li>
         <li>
-          <a href="Users">Users</a>
+          <a href="/">About</a>
         </li>
       </ul>
     </div>
