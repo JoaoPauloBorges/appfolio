@@ -32,6 +32,18 @@
   flex: 1;
 }
 
+.toolbar_navigation-items {
+  margin-right: 10%;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .toolbar_navigation-items {
+    margin-right: 5%;
+    font-size: 1.2rem;
+  }
+}
+
 .toolbar_navigation-items ul {
   list-style: none;
   margin: 0;

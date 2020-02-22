@@ -9,7 +9,7 @@ const Banner: React.FC = () => {
             <div className="outdoor">
                 <div className="jar" />
                 <div>
-                    <p>Grap a juice and take a look <span role="img" aria-label="juice box">🍋</span></p>
+                    <p>Grab a juice and do a sightseeing <span role="img" aria-label=" Smiling Face with Sunglasses Emoji">😎</span></p>
                 </div>
             </div>
 
