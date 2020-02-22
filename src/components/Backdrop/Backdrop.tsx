@@ -4,9 +4,17 @@ import "./Backdrop.css";
 
 
 interface Props {
-   click():  void;
+   show: boolean;
+   click(): void;
 }
 
-const backdrop: React.FC<Props> = ({ click }) => <div className="backdrop" onClick={click} />;
+const backdrop: React.FC<Props> = (props) => {
+
+   let backdropClasses = props.show ? "backdrop open" : "backdrop";
+
+   return (
+      <div className={backdropClasses} onClick={props.click} />
+   );
+}
 
 export default backdrop;

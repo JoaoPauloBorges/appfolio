@@ -1,1 +1,1 @@
-declare module "*.png";
+declare module "*.png | *.webp | *.jpeg";

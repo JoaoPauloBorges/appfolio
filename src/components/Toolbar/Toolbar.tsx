@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import DrawerToggle from "../SideDrawer/DrawerToggle";
-import Background from "../../assets/lemon.png";
+import Background from "../../assets/lemon.webp";
 import SideDrawer from "../SideDrawer/SideDrawer";
 import "./Toolbar.css";
 

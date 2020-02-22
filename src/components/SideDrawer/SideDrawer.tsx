@@ -9,12 +9,11 @@ interface Props {
 }
 
 const sideDrawer: React.FC<Props> = (props) => {
-  let drawerClasses = props.show ? "side-drawer open": "side-drawer";
-  let backdrop = props.show ? <Backdrop click={props.deactiveDrawer} /> : null;
+  let drawerClasses = props.show ? "side-drawer open" : "side-drawer";
 
   return (
     <div>
-      {backdrop}
+      <Backdrop show={props.show} click={props.deactiveDrawer} />
       <div className={drawerClasses}>
         <ul>
           <li>
