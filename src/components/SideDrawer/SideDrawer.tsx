@@ -2,6 +2,7 @@ import React from "react";
 
 import Backdrop from "../Backdrop/Backdrop";
 import "./SideDrawer.css";
+import { Link } from "react-router-dom";
 
 interface Props {
   show: boolean;
@@ -17,10 +18,10 @@ const sideDrawer: React.FC<Props> = (props) => {
       <div className={drawerClasses}>
         <ul>
           <li>
-            <a href="/">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/">About</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </div>

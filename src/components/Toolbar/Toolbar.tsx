@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link } from "react-router-dom";
 
 import DrawerToggle from "../SideDrawer/DrawerToggle";
 import Background from "../../assets/lemon.webp";
@@ -28,16 +29,16 @@ const Toolbar: React.FC = () => {
             <DrawerToggle click={handleToggle} />
           </div>
           <div style={logoStyle} className="toolbar__logo">
-            <a href="/">appFólio</a>
+            <Link to="/">appFólio</Link>
           </div>
           <div className="spacer" />
           <div className="toolbar_navigation-items">
             <ul>
               <li>
-                <a href="/">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <a href="/">About</a>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>

@@ -1,20 +1,37 @@
 import React from "react";
+import { Switch, Route } from 'react-router-dom'
+
 
 import Toolbar from "./components/Toolbar/Toolbar";
-import Banner from "./components/Banner/Banner";
-
+import About from "./components/About/About";
+import Home from "./components/Home/Home";
 
 export default function App() {
 
   return (
     <div style={{ height: "100%" }} className="App">
       <Toolbar />
-      <main style={{ paddingTop: "64px" }}>
-        <Banner />
-        <section style={{margin: "10px auto", maxWidth: "70%", paddingTop: "5px"}}>
-          <p> Hello little world <span role="img" aria-label="world">🌎</span> </p>
-        </section>
-      </main>
+      <Main />
     </div>
   );
 };
+
+function Main() {
+  return (
+    <main style={{ paddingTop: "64px" }}>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/about' component={About} />
+      </Switch>
+    </main>
+  );
+}
+
+function Projects() {
+  return (
+    <div>
+      <h1>Welcome to projects</h1>
+    </div>
+  );
+}
