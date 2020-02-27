@@ -1,53 +1,47 @@
 import React from "react"
 
+import JProfile from "../../assets/jp.jpeg";
+import "./Cv.css";
+
 const Cv = () => {
-    return (<div>JP </div>);
+    return (
+        <section className="container">
+            <div className="content">
+                <section className="header">
+                    <img className="card-avatar" alt="foto-perfil" src={JProfile} />
+                    <div>
+                        <h2>João Paulo Borges</h2>
+                        <p>Software Developer</p>
+                    </div>
+                </section>
+                <section className="body">
+                    <div className="about">
+                        <div>
+                            <h4>Sobre</h4>
+                            <p>Undergraduate student in Computer Science from the Pontifícia Universidade Católica de Goiás.
+Fields of Interest: Web Development, Computer Vision, Digital Image Processing, Pattern Recognition and Machine Learning. </p>
+                            <div className="mat-divider" />
+                        </div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>62 9 8263 7916</p>
+                            <div className="mat-divider" />
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>joaopaulo.borges.gm@hotmail.com</p>
+                            <div className="mat-divider" />
+                        </div>
+                        <div>
+                            <h4>Social networks</h4>
+                            <p><a href="https://linkedin.com/in/joao-paulo-borges">
+                                linkedin.com/in/joao-paulo-borges</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    );
 }
+
 export default Cv;
-
-
-
-
-// <section class="container">
-//   <div class="content">
-//     <section class="header">
-//       <img class="card-avatar" src="{{url + researcher.imagePath}}">
-//       <div>
-//         <h2>{{researcher.name}}</h2>
-//         <P>{{researcher.headline}}</P>
-//       </div>
-//     </section>
-//     <section class="body">
-//       <div class="about">
-//         <div *ngIf="researcher.about">
-//           <h4>Sobre</h4>
-//           <P>{{researcher.about}}</P>
-//           <mat-divider></mat-divider>
-//         </div>
-//         <div *ngIf="researcher.lattesUrl">
-//           <h4>Lattes</h4>
-//           <p>
-//             <a onmouseover="this.style.color='yellow';"
-//               onmouseout="this.style.color='#969696';" style="color: #969696;"
-//               target="_blank" [href]="researcher.lattesUrl">{{researcher.lattesUrl}}</a>
-//           </p>
-//           <mat-divider></mat-divider>
-//         </div>
-//         <div *ngIf="researcher.phoneNumber">
-//           <h4>Phone Number</h4>
-//           <p>{{researcher.phoneNumber}}</p>
-//           <mat-divider></mat-divider>
-//         </div>
-//         <div *ngIf="researcher.email">
-//           <h4>Email</h4>
-//           <p>{{researcher.email}}</p>
-//           <mat-divider></mat-divider>
-//         </div>
-//         <div *ngIf="researcher.socialNetworks.length > 0">
-//           <h4>Social networks</h4>
-//           <p>{{researcher.socialNetworks}}</p>
-//         </div>
-//       </div>
-//     </section>
-//   </div>
-// </section>
