@@ -6,7 +6,7 @@
     margin-bottom: 10px;
 }
 
-.bannervid video, h2 {
+.bannervid video, .bannervid h2 {
     width: 50%;
     height: 100%;
     position: absolute;

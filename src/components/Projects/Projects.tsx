@@ -3,6 +3,7 @@ import React from "react"
 import "./Projects.css";
 import ocean from "../../assets/oceanlite.mp4";
 
+
 const Projects: React.FC = () => {
 
     return (
