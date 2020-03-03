@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import Toolbar from "./components/Toolbar/Toolbar";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
+import Projects from "./components/Projects/Projects";
 
 export default function App() {
 
@@ -25,13 +26,5 @@ function Main() {
         <Route path='/about' component={About} />
       </Switch>
     </main>
-  );
-}
-
-function Projects() {
-  return (
-    <div>
-      <h1>Welcome to projects</h1>
-    </div>
   );
 }

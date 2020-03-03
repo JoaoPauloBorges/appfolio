@@ -29,7 +29,7 @@ h2 {
   margin: 0;
   color: rgb(200, 255, 0);
   padding-left: 15px;
-  font-size: 15px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 
@@ -43,10 +43,11 @@ h2 {
   padding-top: 10px;
   font-size: 25px;
   letter-spacing: 0.1em;
+  margin: 2px 0;
 }
 
 .body p {
-  font-size: 18px;
+  font-size: 16px;
   color: whitesmoke;
   letter-spacing: 0.2em;
 }
@@ -72,6 +73,18 @@ h2 {
   object-fit: cover;
 }
 
+p a {
+  text-decoration: none !important;
+  color: rgb(245, 255, 228) !important;
+}
+p a:hover {
+  color: yellow !important;
+}
+
+body p {
+  word-wrap: break-word;
+}
+
 @media (min-width: 700px) {
   .card-avatar {
     height: 140px;
@@ -84,17 +97,21 @@ h2 {
     grid-gap: 1em;
   }
 
-  p a {
-    text-decoration: none !important;
-    color: black !important;
-  }
-  p a:hover {
-    color: yellow !important;
-  }
   .header h2 {
     font-size: 40px;
   }
   .header p {
     font-size: 25px;
   }
+}
+
+.socialNetworks {
+ display: flex;
+}
+
+
+/* overired */
+
+.MuiIconButton-root {
+  color: inherit !important;
 }

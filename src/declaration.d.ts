@@ -1,1 +1,4 @@
-declare module "*.png | *.webp | *.jpeg";
+declare module '*.mp4' {
+    const src: string;
+    export default src;
+}

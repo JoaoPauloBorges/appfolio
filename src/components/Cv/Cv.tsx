@@ -1,4 +1,5 @@
 import React from "react"
+import IconButton from '@material-ui/core/IconButton';
 
 import JProfile from "../../assets/jp.jpeg";
 import "./Cv.css";
@@ -34,8 +35,20 @@ Fields of Interest: Web Development, Computer Vision, Digital Image Processing, 
                         </div>
                         <div>
                             <h4>Social networks</h4>
-                            <p><a href="https://linkedin.com/in/joao-paulo-borges">
-                                linkedin.com/in/joao-paulo-borges</a></p>
+                            <div className="socialNetworks">
+                                <p><a href="https://linkedin.com/in/joao-paulo-borges"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <IconButton><i className="fab fa-linkedin-in"></i></IconButton></a>
+                                </p>
+                                <p><a href="https://twitter.com/gm_joaopaulo"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <IconButton><i className="fab fa-twitter"></i></IconButton></a>
+                                </p>
+                                <p><a href="https://github.com/joaopauloborges"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <IconButton><i className="fab fa-github"></i></IconButton></a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
